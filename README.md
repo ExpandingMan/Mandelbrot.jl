@@ -1,7 +1,7 @@
 # Mandelbrot
 Some simple, fun Julia code for generating Mandelbrot set related imagery.  This was
 basically a "weekend project" and is more of a nice demonstration of
-[Julia](julialang.orb) than anything else.
+[Julia](https://julialang.orb) than anything else.
 
 Everything here works simply by mapping the values of individual pixels.  As such, the
 images may look a little "grainy" depending on how many iterations are used.  This can be
