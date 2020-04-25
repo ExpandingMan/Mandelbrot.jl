@@ -5,7 +5,8 @@ basically a "weekend project" and is more of a nice demonstration of
 
 Everything here works simply by mapping the values of individual pixels.  As such, the
 images may look a little "grainy" depending on how many iterations are used.  This can be
-remedied either by doing more itrations or with some sort of image post-processing.
+remedied either by doing more iterations (or plotting more points) or with some sort of
+image post-processing.
 
 ## Simple Uses
 One can check if a complex number `z` (specifically, any Julia `Number`) is in the mandelbrot
@@ -22,9 +23,9 @@ n_iter)`.
 One can generate the so-called "[buddhabrot](https://en.wikipedia.org/wiki/Buddhabrot)"
 image by doing
 ```julia
-h = buddha(10^7)  # "buddhabrot" from uniform distribution with 10^7 iterations of escape trajectories
+h = buddha(10^7)  # "buddhabrot" of 10^7 points drawn from the uniform distribution
 
-h₁ = buddha(𝓅, 10^7)  # "buddhabrot" from probability distribution 𝓅 with 10^7 iterations
+h₁ = buddha(𝓅, 10^7)  # "buddhabrot" of 10^7 points drawn from distribution 𝓅
 ```
 When generating the "buddhabrot" a histogram is made of mandelbrot trajectories from some
 number `z`.  By default these numbers are drawn from a uniform distribution, but they can
